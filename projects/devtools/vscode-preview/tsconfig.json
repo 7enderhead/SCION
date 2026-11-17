@@ -7,6 +7,7 @@
             "es2017"
         ],
         "sourceMap": true,
+        "typeRoots": ["./node_modules/@types"],
         "rootDir": ".",
         "noUnusedLocals": true,
         "noUnusedParameters": true,

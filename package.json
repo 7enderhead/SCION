@@ -61,5 +61,8 @@
   },
   "bugs": {
     "url": "https://github.com/jbeard4/scion/issues"
+  },
+  "overrides": {
+    "@types/minimatch": "^5.1.2"
   }
 }

@@ -49,7 +49,7 @@
     "sorcery": "^0.10.0",
     "tsify": "^2.0.8",
     "typescript": "4.2.4",
-    "uglify-js": "^2.8.21",
+    "uglify-js": "^3.19.3",
     "uglifyify": "^3.0.4",
     "watchify": "^3.9.0"
   },
@@ -61,7 +61,7 @@
     "transpile": "tsc -p . --outDir dist/",
     "fix-global": "sed -i -e 's/g.schviz = f()/g.scion = g.scion || {}; g.scion.schviz = f().default;/' dist/schviz.js",
     "bundle": "cd dist; browserify --exclude electron --exclude @scion-scxml/scxml index.js -d  -s schviz -o schviz.js -v; sorcery -i schviz.js",
-    "minify": "cd dist; uglifyjs schviz.js --in-source-map schviz.js.map  --source-map schviz.min.js.map  -o schviz.min.js",
+    "minify": "cd dist; uglifyjs schviz.js --source-map \"content=schviz.js.map,url=schviz.min.js.map\" -o schviz.min.js",
     "clean": "rm -rf dist/*",
     "server": "node grunt/server.js",
     "start": "npm run server",
