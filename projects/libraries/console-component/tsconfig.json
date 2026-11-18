@@ -11,7 +11,8 @@
     "inlineSourceMap": true,
     "jsx" : "react",
     "target": "es5",
-    "removeComments": false
+    "removeComments": false,
+    "types": []
   },
   "include": [
     "src/*"

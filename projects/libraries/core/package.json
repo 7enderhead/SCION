@@ -79,5 +79,8 @@
     "watch": "watchify -d lib/scion.js -o dist/scion.js -s scion",
     "docs": "typedoc --module commonjs  --includeDeclarations --out dist/docs/ ./tsd/scion-core.d.ts --readme README.md"
   },
-  "gitHead": "ab2f1c18646c2cabac9794d13892ea05257d0aa5"
+  "gitHead": "ab2f1c18646c2cabac9794d13892ea05257d0aa5",
+  "overrides": {
+    "browserify-zlib": "^0.2.0"
+  }
 }
